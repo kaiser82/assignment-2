@@ -22,6 +22,10 @@
 .color-title{
   color: rgb(230, 83, 60);
 }
+.text-primary{
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
 .btn-primary{
   border: none;
   border-radius: 42px;
@@ -39,6 +43,15 @@
   font-weight: 600;
   color: white;
   background-color: black;
+}
+.title{
+  font-size: 48px;
+  font-weight: 900px;
+  margin-bottom: 0;
+}
+.subtitle{
+  font-weight:900;
+  font-size: 24px;
 }
 
 body{
@@ -82,11 +95,14 @@ body{
   /* margin: 0; */
   background-color: rgb(230, 83, 60);
 }
+.alter-menu{
+  display: none;
+}
 .banner-container{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 88px;
   padding: 40px 140px;
 }
 .banner-heading{
@@ -102,8 +118,50 @@ body{
 
 }
 .banner-img-container{
-  width: 50%;
+  width: 80%;
+  height: 600px;
+  background-image: url(../images/images2.png);
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position:right;
 }
+.sticker-top, .sticker-bot{
+  width: 200px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+}
+.sticker-top{
+  position: relative;
+  right:-420px;
+  top: 125px;
+}
+.sticker-bot{
+  position: relative;
+  left:-50px;
+  bottom: -350px;
+}
+.sticker-top h3{
+  font-size: 40px;
+  font-weight: 900px;
+  margin: 0;
+}
+.sticker-top p{
+  margin: 0;
+}
+.sticker-bot h3{
+  font-size: 40px;
+  font-weight: 900px;
+  margin: 0;
+}
+.sticker-bot p{
+  margin: 0;
+}
+
+
 .change-habit{
   max-width: 1044px;
   margin: 0 auto;
@@ -115,12 +173,16 @@ body{
 .card-container{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 20px;
   text-align: center;
 }
 .card-img > img{
   /* border: solid 2px orange; */
   border-radius: 50%;
+}
+.card h6{
+  font-size: 18px;
+  margin-bottom: 0;
 }
 
 .run-extra{
@@ -155,6 +217,11 @@ body{
   height: 200px;
 }
 
+.bmi-info{
+  max-width: 670px;
+  margin: 0 auto;
+  margin-bottom: 88px;
+}
 .calculator{
   background-color: rgb(34, 34, 34);
   display: grid;
@@ -163,6 +230,7 @@ body{
   gap: 175px;
   padding: 50px 190px;
 }
+
 .table, th, td{
   border: .5px solid rgba(255, 255, 255, 0.5);
   border-collapse: collapse;
@@ -208,4 +276,58 @@ footer{
 }
 .end{
   text-align: center;
+}
+
+@media screen and (max-width:577px) {
+  .alter-menu{
+    display:contents;
+  }
+  .menu-container{
+    display: none;
+  }
+  .navigation{
+    padding: 10px;
+  }
+  .banner-container{
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+  .sticker-top{
+  position: relative;
+  right:-280px;
+  top: 125px;
+}
+  .card-container{
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 50px;
+  }
+  .run-extra{
+    padding: 20px;
+    margin: 0;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+  }
+  .bmi-info{
+    padding: 20px;
+  }
+  .calculator{
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+    gap: 10px;
+  }
+  .table{
+    width: 90%;
+  }
+  footer{
+    padding: 20px;
+  }
+  .footer-container, .get{
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width:578px) and (max-width:900px) {
+  
 }
