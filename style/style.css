@@ -5,6 +5,14 @@
   font-weight: 400px;
   font-style: normal;
 }
+.miama{
+  font-family: 'Miama', sans-serif;
+  font-weight: 400px;
+  
+}
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+
 .color-primary{
   color: white;
 }
@@ -46,18 +54,20 @@ body{
   display: flex;
   justify-content: space-between; 
   align-items: center;
+  padding: 60px 190px;
 }
 .brand{
   font-size: 36px;
   font-style: italic;
 }
+
 .menu-container ul{
   display: flex;
   gap: 40px;
   align-items: center;
   list-style: none;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  padding:2px;
+  padding:4px 12px;
   border-radius: 15px;
 }
 .menu-container ul li>a{
@@ -78,6 +88,18 @@ body{
   align-items: center;
   gap: 40px;
   padding: 40px 140px;
+}
+.banner-heading{
+  font-size: 78px;
+  font-weight: 900px;
+  margin-bottom: 0;
+}
+.special{
+  font-weight: 400;
+  font-size: 150px;
+  margin: 0;
+  padding: 0;
+
 }
 .banner-img-container{
   width: 50%;
